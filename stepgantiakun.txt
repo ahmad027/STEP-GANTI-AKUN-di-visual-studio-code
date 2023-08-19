@@ -1,0 +1,39 @@
+STEP GANTI AKUN GITHUB UTK PUSH DI GITHUB AKUN LAIN
+
+JANGAN LUPA SEBELUM BUAT MUALI CODING, BUAT FOLDER .gitignore berisi 
+- .git
+- .gitignore
+- dll yang tdk mau ditampilkan di github
+
+agar code di github hanya yg penting2 saja
+
+
+1. logout Visual studio code
+2. cek akun yang terdaftar di visual studio code dengan cara 
+	git config --list --show-origin
+3. set usrname dengan akun yang mau dibuat push, dengan cara :
+. 	git config --global user.name "nama username github"
+4. set email dengan akun yang mau dibuat push, dengan cara:
+	git config --global user.email "nama email terdaftar pada github username diatas"
+	kalau mau keluar ketik "q"
+5. jangan lupa hapus github credential di windows, agar tdk gagal saat push karena bentrok dengan akun yg lama
+	caranya cari credential di start, pilih windows credential, cari github, remove akun yang lama
+6. jangan lupa step awal git add.
+7. commit codenya dengan menambahkan messagenya
+	git commit -m "keterangannya apa?"
+8. buat repository di github, usahakan nama sama dengan foldernya biar gampang
+9. Ada step2 nya sebelum upload
+	copy untuk link yang dibuat push
+10. sebelum push, coba cek status codenya dengan perintah:
+	git status
+	kalau ada warna merah, ada file yang belum di push sama sekali
+11. menambahkan remote dahulu dengan link repository
+	misal 
+	git remote add origin https://github.com/ahmad027/BELAJAR-CSS-LAYOUTING-PAK-DIKA.git
+	remote tersebut utk mendaftarkan remote origin utk digunakan push nantinya
+12. push codenya, dengan perintah
+	git push -u origin master
+	biasanya default git push -u origin main, tapi karena di visual studio code master, ubah master saja
+13. kalau belum login tentunya ada step login dulu, usahakan browser yang terbuka hanya akun github yang mau dipush
+14. pilih browser saja, masukkan kode yang diminta ke browser
+15. kalau ada proses, berarti berhasil. dan refresh repositorinya dan akan ada codenya 
